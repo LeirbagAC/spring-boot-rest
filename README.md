@@ -1,6 +1,6 @@
 # Spring Boot REST API - Job Post & Security Management
 
-Este é um projeto de uma API RESTful completa desenvolvida com **Java 21** e **Spring Boot**, focada no gerenciamento de vagas de emprego (Job Posts) e controle de acesso seguro de usuários. O projeto foi construído para consolidar e demonstrar conhecimentos em persistência de dados, boas práticas no design de APIs REST e a implementação de uma camada inicial de segurança.
+Este é um projeto simples feito durante sessões de estudo de API RESTful completa desenvolvida com **Java 21** e **Spring Boot**, focada no gerenciamento de vagas de emprego (Job Posts) e controle de acesso seguro de usuários. O projeto foi construído para consolidar e demonstrar conhecimentos em persistência de dados, boas práticas no design de APIs REST e a implementação de uma camada inicial de segurança.
 
 ---
 
