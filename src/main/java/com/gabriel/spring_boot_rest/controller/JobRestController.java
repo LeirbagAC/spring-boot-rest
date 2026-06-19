@@ -16,7 +16,7 @@ public class JobRestController {
     @Autowired
     private JobService service;
 
-    @GetMapping("/jobPosts")
+    @GetMapping("/JobPosts")
     public List<JobPost> getAllJobs() {
         return service.getAllJobs();
     }
@@ -47,7 +47,7 @@ public class JobRestController {
                 .body(jobPost);
     }
 
-    @PutMapping("jobPost")
+    @PutMapping("JobPost")
     public JobPost updateJob(@RequestBody JobPost jobPost) {
         service.updateJob(jobPost);
         return service.getJob(jobPost.getPostId());

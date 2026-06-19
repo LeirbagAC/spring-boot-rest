@@ -9,42 +9,7 @@ import java.util.List;
 @Repository
 public interface JobRepo extends JpaRepository<JobPost, Integer> {
 
+    //Usado dessa forma para finalidades de estudo, sql seria a opção correta nesse cenário
     List<JobPost> findByPostProfileContainingIgnoreCaseOrPostDescContainingIgnoreCase(String profile, String desc);
 
 }
-
-//public List<JobPost> getAllJobs() {
-//    return jobs;
-//}
-//
-//public void addJob(JobPost job){
-//    jobs.add(job);
-////        System.out.println(jobs);
-//}
-//
-//public JobPost getJob(int postId) {
-//    for(JobPost job : jobs) {
-//        if(job.getPostId() == postId) {
-//            return job;
-//        }
-//    }
-//
-//    return null;
-//}
-//
-//public void changeJob(JobPost jobPost ,int postId) {
-//    for(JobPost job : jobs) {
-//        if(job.getPostId() == postId) {
-//            job.setPostProfile(jobPost.getPostProfile());
-//            job.setPostDesc(jobPost.getPostDesc());
-//            job.setReqExperience(jobPost.getReqExperience());
-//            job.setPostTechStack(jobPost.getPostTechStack());
-//
-////                System.out.println(jobs);
-//        }
-//    }
-//}
-//
-//public void deleteJob(int postId) {
-//    jobs.removeIf(job -> job.getPostId() == postId);
-//}
