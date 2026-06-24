@@ -41,9 +41,9 @@ public class JobRestController {
 
     @PostMapping("/JobPost") //O ResponseEntity para retornar 'Feedback' Visual (201 Created) e confirmação dos dados
     public ResponseEntity<JobPost> addJob(@RequestBody JobPost jobPost) {
-        service.addJob(jobPost);
+        JobPost savedJob = service.addJob(jobPost);
         return ResponseEntity.status(HttpStatus.CREATED)
-                .body(jobPost);
+                .body(savedJob);
     }
 
     @PutMapping("JobPost")
